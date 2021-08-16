@@ -1,0 +1,47 @@
+name = input("Enter your name : ")
+print("Hi", name,"! Would you like to play a quiz?")
+playing = input("yes or no : ")
+
+if playing.lower() != "yes":
+    quit()
+
+else: print("Okay! Here is the quiz!")
+score = 0
+
+answer = input("what is the color of an orange? : ")
+
+if answer.lower() == "orange":
+    print("You are correct!")
+    score += 1
+
+else:
+    print("You are incorrect!")
+
+answer = input("what is the color of blood? : ")
+
+if answer.lower() == "red":
+    print("You are correct!")
+    score += 1
+
+else:
+    print("You are incorrect!")
+
+answer = input("How many senses are there? : ")
+
+if answer.lower() == "five" or "5":
+    print("You are correct!")
+    score += 1
+
+else:
+    print("You are incorrect!")
+
+answer = input("what is the color of an apple? : ")
+
+if answer.lower() == "red" or "green":
+    print("You are correct!")
+    score += 1
+else:
+    print("You are incorrect!")
+
+print("Congratulations! You have reached the end of the quiz!")
+print("You scored", score , "points")
